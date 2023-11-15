@@ -1,0 +1,12 @@
+html
+  include includes/head.pug
+  body
+    include includes/header.pug
+
+    main.container.mt-4
+      h2= race.name
+      div.races
+      h4 Año:
+        p= race.year
+      h4 Descripción:
+        p= race.description

@@ -1,0 +1,16 @@
+header.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a(href="/api/races").navbar-brand(style="padding-left: 1rem;") F1.com
+
+  button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+
+  div#navbarNav.collapse.navbar-collapse.justify-content-end(style="padding-right: 1rem;")
+    ul.navbar-nav
+      if auth
+        li.nav-item
+          a(href="#" class="nav-link color-mode") Logout
+      else
+        li.nav-item
+          a(href="#" class="nav-link color-mode") Login
+        li.nav-item
+          a(href="#" class="nav-link color-mode") Register

@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-racesF1-user",
+    "dateExported": "2023-11-13T08:17:48.249Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3373a6e7-a676-4fa0-b55d-af306e3af567",
+            "colId": "789b94b0-f4be-447a-948e-06eb6ca371a9",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-12T22:49:38.232Z",
+            "modified": "2023-11-13T08:05:40.896Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"username\": \"david12\",\n\"password\": \"1234\",\n\"email\": \"dgr763@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e5f3edf-a25c-4910-a6ac-e6aef94faf42",
+            "colId": "789b94b0-f4be-447a-948e-06eb6ca371a9",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-12T22:50:18.838Z",
+            "modified": "2023-11-13T08:07:10.408Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"username\": \"david1\",\n\"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

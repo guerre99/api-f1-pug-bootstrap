@@ -1,0 +1,129 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-racesF1-pilot",
+    "dateExported": "2023-11-13T08:17:14.702Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "96ee0dd5-e045-47e0-bb47-ba1e5066ace9",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "/ping",
+            "url": "localhost:3000/ping",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-06T15:35:55.944Z",
+            "modified": "2023-11-08T10:02:45.435Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5856f1b-cb6e-45ee-9d72-41497049429c",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "pilot",
+            "url": "localhost:3000/api/pilots",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-08T09:49:53.988Z",
+            "modified": "2023-11-08T11:50:45.509Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"aEsteban Ocon\",\n  \"image\": \"\",\n  \"wins\": 0,\n  \"championships\": 0,\n  \"podiums\": 0,\n  \"nationality\": \"Spanish\",\n  \"debut_date\": \"2016-08-28\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4361964-b932-40df-8ed9-73cb77a80f05",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "pilot/:pilotId",
+            "url": "localhost:3000/api/pilots/654b712d601e6750b583a60c",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2023-11-08T11:00:15.241Z",
+            "modified": "2023-11-08T11:30:48.674Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos Sainz\",\n  \"image\": \"\",\n  \"wins\": 0,\n  \"championships\": 0,\n  \"podiums\": 0,\n  \"nationality\": \"Spanish\",\n  \"debut_date\": \"2014-11-28\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "64b8a66d-38a9-4468-8c79-82241974e2e6",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "pilot/:pilotId",
+            "url": "localhost:3000/api/pilots/654b761578f0630cd92b609b",
+            "method": "PUT",
+            "sortNum": 27500,
+            "created": "2023-11-08T11:35:02.150Z",
+            "modified": "2023-11-08T12:30:48.801Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"_id\": \"654b761578f0630cd92b609b\",\n    \"name\": \"AEsteban Ocon\",\n    \"image\": \"\",\n    \"nationality\": \"Spanish\",\n    \"wins\": 0,\n    \"championships\": 0,\n    \"podiums\": 0,\n    \"debut_date\": \"2016-08-28T00:00:00.000Z\",\n    \"isActive\": true,\n    \"retirement_date\": \"9999-12-31T00:00:00.000Z\",\n    \"__v\": 0\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a61b28c-c236-44d4-aa66-07ae7d558af2",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "pilot",
+            "url": "localhost:3000/api/pilots/?order=wins",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-08T10:58:46.930Z",
+            "modified": "2023-11-13T08:01:36.651Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTE2MThmZGRmNDA4NGUyM2U2NjQ0OCIsImlhdCI6MTY5OTg2MjQyOH0.EUftOPwax2nJNfall9zMjKKWMbNpqA6Nv6HtoG27yKQ"
+                }
+            ],
+            "params": [
+                {
+                    "name": "order",
+                    "value": "wins",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos Sainz\",\n  \"image\": \"\",\n  \"wins\": 0,\n  \"championships\": 0,\n  \"podiums\": 0,\n  \"nationality\": \"Spanish\",\n  \"debut_date\": \"2014-11-28\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6790a0b8-58c7-43d4-8bfe-9da161742ae7",
+            "colId": "ccd7b683-bdd8-451c-a798-bea5b47fe840",
+            "containerId": "",
+            "name": "pilot/:pilotId",
+            "url": "localhost:3000/api/pilots/654b6c7ff8ed634e26839e9e",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-08T10:59:45.071Z",
+            "modified": "2023-11-08T11:10:05.596Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos Sainz\",\n  \"image\": \"\",\n  \"wins\": 0,\n  \"championships\": 0,\n  \"podiums\": 0,\n  \"nationality\": \"Spanish\",\n  \"debut_date\": \"2014-11-28\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

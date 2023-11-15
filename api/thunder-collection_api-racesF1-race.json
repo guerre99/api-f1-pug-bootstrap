@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-racesF1-race",
+    "dateExported": "2023-11-13T08:17:41.751Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a769aa51-5914-48f9-97b5-ba0fa9c05a20",
+            "colId": "3a0b2a80-4d84-4bf7-952e-0af43bf2939a",
+            "containerId": "",
+            "name": "races",
+            "url": "http://localhost:3000/api/races",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-08T12:38:30.224Z",
+            "modified": "2023-11-08T12:45:06.091Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2899b20a-5b59-4cb1-b20b-1974f339d01c",
+            "colId": "3a0b2a80-4d84-4bf7-952e-0af43bf2939a",
+            "containerId": "",
+            "name": "races/:raceId",
+            "url": "http://localhost:3000/api/races/654bbc430371e165a14a368b",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-11-08T17:01:00.267Z",
+            "modified": "2023-11-08T17:01:30.403Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "914b3f50-cb03-4559-8255-3bc10f69891a",
+            "colId": "3a0b2a80-4d84-4bf7-952e-0af43bf2939a",
+            "containerId": "",
+            "name": "races",
+            "url": "http://localhost:3000/api/races",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-08T12:48:47.269Z",
+            "modified": "2023-11-13T08:07:18.658Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTE2MDBkZGRmNDA4NGUyM2U2NjQzZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5OTg2MjgzMH0.xPonSEdqAVvNMQxhM4TOOyFMH7_21t9g_bI1iZcS9IM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"British GP2\",\n  \"year\": \"2022\",\n  \"image\": \"\",\n  \"description\": \"\",\n  \"date\": \"2022-07-03\",\n  \"podium\":{\n    \"first_position\":\"654b7171ecfbc33c28ad7811\",\n    \"second_position\": \"654b7235ecfbc33c28ad7813\",\n    \"third_position\": \"654b761578f0630cd92b609b\"\n  }\n  ,\n  \"resume\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "06858063-f97b-4e15-a19d-5d4463566325",
+            "colId": "3a0b2a80-4d84-4bf7-952e-0af43bf2939a",
+            "containerId": "",
+            "name": "races/:raceId",
+            "url": "localhost:3000/api/races/654bb6b1deb69456e9695693",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-11-08T16:59:37.571Z",
+            "modified": "2023-11-08T17:00:49.572Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
